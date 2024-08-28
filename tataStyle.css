@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    box-shadow:0px 3px 5px rgb(183, 170, 170) ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .nav-items{
+    /* background-color: rgb(221, 210, 85); */
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav .nav-items a{
+     text-decoration: none;
+     color: black;
+     font-family: "Noto Sans", sans-serif;
+     font-weight: 600;
+}
+nav a::before{
+    content: ;
+    height: 3px;
+    display: inline-block;
+    background-color: black;
+    position: relative;
+    top: 30px;
+    border-radius: 50px;
+}
+a:hover::before{
+    width: 100%;
+    transition: all .4s linear;
+}
+nav .nav-icon{
+    display: flex;
+    gap: 30px;
+}
+/* contact */
+.contact{
+    height: 65px;
+    width: 100%;
+    background-color: rgb(71,78,78);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .call,.test-drive{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    svg{
+        animation: zoom-up 0.3s linear infinite alternate ;
+    }
+    @keyframes zoom-up {
+        to{
+            transform:scale(1,2);
+        }
+    }
+}
+.primary-link{
+    font-family: "Noto Sans", sans-serif;
+     font-weight: 600;
+     color: white;
+     text-decoration: none;    
+}
+/* Home */
+.home{
+     height: 80vh;
+     width: 100%;
+     /* .right-side{
+        background-color: rgb(138, 101, 8);
+        position: absolute;
+        right: 0; */
+
+        background: linear-gradient(90deg,white,goldenrod);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+            width: 450px;
+            text-align: center;
+        }
+        .home-text{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+     }
+     .primary-para{
+        font-family: "Noto sans", sans-serif;
+        font-family: 300;
+        font-size: 1.3rem;
+     }
+     .primary-head{
+        font-family: "Noto sans", sans-serif;
+        font-family: 600;
+        font-size: 4rem;
+     }
+    /* price section starts */
+    .section-price{
+        height: 65vh;
+        width: 95%;
+        background-color: rgb(71,78,78);
+        display: flex;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        gap: 180px;
+        border-bottom: 2px solid;
+        p{
+            font-family: "Noto sans", sans-serif;
+        font-family: 400;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        }
+
+    }
+    .loc:hover{
+        cursor: pointer;
+    }
